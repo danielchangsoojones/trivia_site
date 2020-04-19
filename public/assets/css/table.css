@@ -21,10 +21,23 @@ div img {
     margin:auto;
 }
 
-.centered {
+#timer {
+    background-color: white;
     position: absolute;
+    width: 100px;
+    height: 55px;
     top: 30%;
     left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#points {
+    background-color: white;
+    position: absolute;
+    width: 100px;
+    height: 55px;
+    top: 30%;
+    left: 60%;
     transform: translate(-50%, -50%);
 }
 
