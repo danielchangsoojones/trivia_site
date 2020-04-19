@@ -44,6 +44,8 @@ app.get('/table', function(req, res) {
 });
 
 app.get('/getQuestions', function(req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   const Questions = require('./questions/loadQuestions');
   var json = Questions.getQuestions();
   res.status(200).json(json);
