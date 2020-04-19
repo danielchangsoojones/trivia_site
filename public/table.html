@@ -6,7 +6,8 @@
     <script>
         $(document).ready(function(){
             $("#option_1").click(function() {
-                $.get("https://jsonplaceholder.typicode.com/posts", function(data, status){
+                $.get("https://triviasite1895.herokuapp.com/getQuestions", function(data, status){
+                    console.log(data);
                     document.getElementById("option_1").innerHTML = data[0].body;
                     $("#option_1").css('background-color', "#E02020");
                 });
@@ -16,7 +17,7 @@
 </head>
         <body>
             <div>
-                <img src="assets/images/poker_table.png" width="961" height="526">
+                <img src="public/assets/images/poker_table.png" width="961" height="526">
                     <div id="timer">
                             <h2 style="color:red">6 seconds</h2>
                     </div>
