@@ -7,6 +7,7 @@
         $(document).ready(function(){
             $("#option_1").click(function() {
                 $.get("https://jsonplaceholder.typicode.com/posts", function(data, status){
+                    document.getElementById("option_1").innerHTML = data[0].body;
                     $("#option_1").css('background-color', "#E02020");
                 });
             });

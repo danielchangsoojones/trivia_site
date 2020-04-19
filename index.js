@@ -43,6 +43,12 @@ app.get('/table', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/table.html'));
 });
 
+app.get('/getQuestions', function(req, res) {
+  const Questions = require('./questions/loadQuestions');
+  var json = Questions.getQuestions();
+  res.status(200).json(json);
+});
+
 // There will be a test page available on the /test path of your server url
 // Remove this before launching your app
 app.get('/test', function(req, res) {
