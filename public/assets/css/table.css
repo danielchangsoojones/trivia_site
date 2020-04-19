@@ -41,3 +41,22 @@ div img {
     transform: translate(-50%, -50%);
 }
 
+#question {
+    position: absolute;
+    width: 700px;
+    height: 55px;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#skip {
+    color: navy;
+    position: absolute;
+    width: 106px;
+    height: 40px;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
